@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>指南 | GridComponents</title>
+    <meta name="description" content="Tools for quickly configuring components for Yunnan projects">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3b6fec45.css" as="style"><link rel="preload" href="/assets/js/app.e2705d2d.js" as="script"><link rel="preload" href="/assets/js/6.21386674.js" as="script"><link rel="prefetch" href="/assets/js/2.5a1b79b4.js"><link rel="prefetch" href="/assets/js/3.73a3b494.js"><link rel="prefetch" href="/assets/js/4.f3f755a1.js"><link rel="prefetch" href="/assets/js/5.d3f2068c.js"><link rel="prefetch" href="/assets/js/7.d71211a0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3b6fec45.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GridComponents</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-exact-active router-link-active">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link">组件</a></div><div class="nav-item"><a href="/demo/" class="nav-link">Demo</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-exact-active router-link-active">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link">组件</a></div><div class="nav-item"><a href="/demo/" class="nav-link">Demo</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/guide/#介绍" class="sidebar-link">介绍</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/guide/#使用" class="sidebar-link">使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/guide/#筛选项配置" class="sidebar-link">筛选项配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/#类型-type" class="sidebar-link">类型 type</a></li><li class="sidebar-sub-header"><a href="/guide/#树形项" class="sidebar-link">树形项</a></li><li class="sidebar-sub-header"><a href="/guide/#下拉项" class="sidebar-link">下拉项</a></li><li class="sidebar-sub-header"><a href="/guide/#输入框项" class="sidebar-link">输入框项</a></li><li class="sidebar-sub-header"><a href="/guide/#自动补全项" class="sidebar-link">自动补全项</a></li><li class="sidebar-sub-header"><a href="/guide/#时间项" class="sidebar-link">时间项</a></li><li class="sidebar-sub-header"><a href="/guide/#时间区间项" class="sidebar-link">时间区间项</a></li><li class="sidebar-sub-header"><a href="/guide/#级联项" class="sidebar-link">级联项</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="指南"><a href="#指南" aria-hidden="true" class="header-anchor">#</a> 指南</h1> <h2 id="介绍"><a href="#介绍" aria-hidden="true" class="header-anchor">#</a> 介绍</h2> <div class="tip custom-block"><p class="custom-block-title">依赖</p> <p>大部分组件基于<a href="https://element.eleme.cn/2.0/#/zh-CN/component/installation" target="_blank" rel="noopener noreferrer">Element-UI<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a><br>
+在使用前需要注册相应的组件来保证正常运行</p></div> <ul><li><a href="/guide/#gridcells">GridCells</a></li> <li><a href="/guide/#gridcard">GridCard</a></li> <li><a href="/guide/#datatable">DataTable</a></li> <li><a href="/guide/#datachart">DataChart</a></li> <li><a href="/guide/#customseed">CustomSeed</a></li> <li><a href="/guide/#filterbar">FilterBar</a></li> <li><a href="/guide/#picktree">PickTree</a></li> <li><a href="/guide/#pickselect">PickSelect</a></li> <li><a href="/guide/#autocomplete">AutoComplete</a></li> <li><a href="/guide/#bridgegroup">BridgeGroup</a></li></ul> <h2 id="使用"><a href="#使用" aria-hidden="true" class="header-anchor">#</a> 使用</h2> <blockquote><p>引用全部组件</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> gridComponents <span class="token keyword">from</span> <span class="token string">&quot;@/assets/grid-components.min.js&quot;</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>gridComponents<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>引用部分组件</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> GridCells<span class="token punctuation">,</span> <span class="token operator">...</span> <span class="token punctuation">,</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/assets/grid-components.min.js'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>GridCells<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span>
+
+或者在组件components项中注入
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span> GridCells<span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>使用</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 在html模块中直接使用 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>grid-cells</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>grid-cells</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>grid-card</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>grid-card</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>data-table</span> <span class="token punctuation">/&gt;</span></span>
+...
+</code></pre></div><h2 id="筛选项配置"><a href="#筛选项配置" aria-hidden="true" class="header-anchor">#</a> 筛选项配置</h2> <h3 id="类型-type"><a href="#类型-type" aria-hidden="true" class="header-anchor">#</a> 类型 type</h3> <ul><li><p>树形(tree)</p></li> <li><p>下拉(select)</p> <ul><li>自定义值转时间区间(config.valueToRange)</li></ul></li> <li><p>输入框(input)</p></li> <li><p>自动补全(autocomplete)</p></li> <li><p>时间类型</p> <ul><li>年(year) 2018</li> <li>月(month) 2018-08</li> <li>日(date) 2018-08-18</li> <li>时间(datetime) 2018-08-18 18:18:18</li> <li>时间区间(daterange) [2018-08-08 18:18:18,2018-08-18 18:18:18]</li></ul></li></ul> <ul><li>级联项(group)</li></ul> <h3 id="树形项"><a href="#树形项" aria-hidden="true" class="header-anchor">#</a> 树形项</h3> <div class="tip custom-block"><p class="custom-block-title">提示</p> <p>默认 url 中返回的数据格式为数组，每个项之间有相互父子关联字段（pid/id）<br>
+通过<code>treeOptions</code>来自动格式化</p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 树形项</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 必传，过滤控件类型</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;tree&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 必传，筛选项label</span>
+  label<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 必传，事件中返回值的key{[key]:value}</span>
+  key<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">//数据集合，url不为空时，以url为主</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">//数据接口地址</span>
+  url<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 树形关联字段及子级字段map</span>
+  treeOptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 顶级入口pid</span>
+    entry<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 需要的树形层级</span>
+    level<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+    <span class="token comment">// 树形关联项字段</span>
+    maps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      id<span class="token punctuation">:</span> <span class="token string">&quot;id&quot;</span><span class="token punctuation">,</span>
+      pid<span class="token punctuation">:</span> <span class="token string">&quot;pid&quot;</span><span class="token punctuation">,</span>
+      children<span class="token punctuation">:</span> <span class="token string">&quot;children&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 控件字段map 使用的label及value</span>
+  keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 显示字段 *树形项默认label为name*</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 最终使用的参数值字段 *树形项默认value为id*</span>
+    value<span class="token punctuation">:</span> <span class="token string">&quot;id&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 子集字段与上述treeOptions.maps.children 相应</span>
+    children<span class="token punctuation">:</span> <span class="token string">&quot;children&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//默认选择值</span>
+  <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="下拉项"><a href="#下拉项" aria-hidden="true" class="header-anchor">#</a> 下拉项</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 下拉项</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 必传，过滤控件类型</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 必传，筛选项label</span>
+  label<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 必传，事件中返回值的key{[key]:value}</span>
+  key<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">//数据集合，url不为空时，以url为主</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">//数据接口地址</span>
+  url<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 控件字段map 使用的label及value</span>
+  keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 显示字段</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;label&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 最终使用的参数值字段</span>
+    value<span class="token punctuation">:</span> <span class="token string">&quot;value&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//默认选择值</span>
+  <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">自定义值转时间区间特殊说明</p> <p>下拉项中自定义值转区间，实现业务上几小时或者几天前快速转时间区间<br>
+data 内部子项的 valueToRange 权限高于外部，针对当前项的 value 转换成最近时间</p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/*
+ * data内部子项的valueToRange权限高于外部，针对当前项的value转换成最近时间
+ */</span>
+<span class="token keyword">const</span> valueToRange <span class="token operator">=</span> <span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+  label<span class="token punctuation">:</span> <span class="token string">&quot;最近时间&quot;</span><span class="token punctuation">,</span>
+  key<span class="token punctuation">:</span> <span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 最终返回字段</span>
+  valueToRange<span class="token punctuation">:</span> <span class="token string">&quot;days&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 可选值[hours,days]</span>
+  format<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd 08:00:00&quot;</span><span class="token punctuation">,</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;最近一小时&quot;</span><span class="token punctuation">,</span>
+      valueToRange<span class="token punctuation">:</span> <span class="token string">&quot;hours&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 可选值[hours,days]</span>
+      value<span class="token punctuation">:</span> <span class="token string">&quot;1&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      name<span class="token punctuation">:</span> <span class="token string">&quot;最近七天&quot;</span><span class="token punctuation">,</span>
+      value<span class="token punctuation">:</span> <span class="token string">&quot;7&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="输入框项"><a href="#输入框项" aria-hidden="true" class="header-anchor">#</a> 输入框项</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 输入框</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;input&quot;</span><span class="token punctuation">,</span>
+  label<span class="token punctuation">:</span> <span class="token string">&quot;站名&quot;</span><span class="token punctuation">,</span>
+  key<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+  <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;名称&quot;</span> <span class="token comment">//默认值</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="自动补全项"><a href="#自动补全项" aria-hidden="true" class="header-anchor">#</a> 自动补全项</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 输入框</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;autocomplete&quot;</span><span class="token punctuation">,</span>
+  label<span class="token punctuation">:</span> <span class="token string">&quot;站点名称&quot;</span><span class="token punctuation">,</span> <span class="token comment">// label</span>
+  key<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 需要暴露的字段</span>
+  fetchParam<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token comment">// url请求参数字段</span>
+  url<span class="token punctuation">:</span> <span class="token string">&quot;/webapi/api/v1/water/site/list?index=1&amp;size=10&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 下拉建议数据接口地址</span>
+  keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;stnm&quot;</span><span class="token punctuation">,</span>
+    value<span class="token punctuation">:</span> <span class="token string">&quot;stcd&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="时间项"><a href="#时间项" aria-hidden="true" class="header-anchor">#</a> 时间项</h3> <div class="tip custom-block"><p class="custom-block-title">提示：时间关键字 nowTime</p> <p>时间项的 default 内部设定了关键字 <code>nowTime</code><br> <code>nowTime</code>：生成当前时间<br> <code>nowTime-subHours-7</code>： 生成当前时间 7 小时前<br> <code>nowTime-subDays-7</code>：生成当前时间 7 天前<br>
+特别的，在<code>datarange</code>对象中<code>default</code>字段支持<code>[nowTime-subDays-7, nowTime]</code>来生成默认请求时间</p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 必传，过滤控件类型 [year,month,date,datetime]</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 必传，筛选项label</span>
+  label<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 必传，主配置中所使用的接口字段</span>
+  key<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 时间值返回格式化 年：yyyy,月：yyyy-MM，日：yyyy-MM-dd，时间：yyyy-MM-dd HH:mm:ss</span>
+  valueFormat<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 时间项显示格式化 同上</span>
+  format<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">//默认选择值  可接收时间字符串 2018-01-01 08:00:00 或date对象</span>
+  <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span> <span class="token comment">// nowTime 关键字</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="时间区间项"><a href="#时间区间项" aria-hidden="true" class="header-anchor">#</a> 时间区间项</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 时间区间项</span>
+<span class="token comment">// range内部 开始时间与结束时间配置与时间项各类型相同</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;daterange&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 只允许有一个</span>
+  key<span class="token punctuation">:</span> <span class="token string">&quot;time&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// daterange的valueFormat，在range内部无效，format有效</span>
+  valueFormat<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span><span class="token punctuation">,</span>
+  range<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">&quot;datetime&quot;</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;开始时间&quot;</span><span class="token punctuation">,</span>
+      format<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">&quot;datetime&quot;</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;结束时间&quot;</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;2018-11-12 08:00:00&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;[nowTime-subDays-7,nowTime]&quot;</span> <span class="token comment">// default 同样支持nowTime组合</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="级联项"><a href="#级联项" aria-hidden="true" class="header-anchor">#</a> 级联项</h3> <div class="tip custom-block"><p class="custom-block-title">提示</p> <p><code>groups</code>数组内每一项配置与普通项配置相同，当前可选<code>input</code>, <code>tree</code>, <code>select</code>, <code>autoComplete</code></p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 级联项</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;group&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 最终使用的参数key 与关联项中使用的一致</span>
+  key<span class="token punctuation">:</span> <span class="token string">&quot;value&quot;</span><span class="token punctuation">,</span>
+  groups<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">&quot;autocomplete&quot;</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;站点名称&quot;</span><span class="token punctuation">,</span>
+      key<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+      bridge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        to<span class="token punctuation">:</span> <span class="token string">&quot;level2&quot;</span> <span class="token comment">// 级联关联对象</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      fetchParam<span class="token punctuation">:</span> <span class="token string">&quot;name1&quot;</span><span class="token punctuation">,</span>
+      url<span class="token punctuation">:</span> <span class="token string">&quot;demo.api.address&quot;</span><span class="token punctuation">,</span>
+      keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">&quot;code&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;关联项&quot;</span><span class="token punctuation">,</span>
+      key<span class="token punctuation">:</span> <span class="token string">&quot;type2&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 唯一标识，需要存在</span>
+      bridge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        to<span class="token punctuation">:</span> <span class="token string">&quot;level3&quot;</span><span class="token punctuation">,</span>
+        <span class="token keyword">from</span><span class="token punctuation">:</span> <span class="token string">&quot;level2&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      url<span class="token punctuation">:</span> <span class="token string">&quot;demo.api.address&quot;</span><span class="token punctuation">,</span>
+      keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">&quot;code&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;关联项&quot;</span><span class="token punctuation">,</span>
+      key<span class="token punctuation">:</span> <span class="token string">&quot;ret3&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 最终合并到的参数key</span>
+      bridge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">from</span><span class="token punctuation">:</span> <span class="token string">&quot;level3&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      url<span class="token punctuation">:</span> <span class="token string">&quot;demo.api.address&quot;</span><span class="token punctuation">,</span>
+      keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">&quot;code&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.e2705d2d.js" defer></script><script src="/assets/js/6.21386674.js" defer></script>
+  </body>
+</html>

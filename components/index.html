@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件 | GridComponents</title>
+    <meta name="description" content="Tools for quickly configuring components for Yunnan projects">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3b6fec45.css" as="style"><link rel="preload" href="/assets/js/app.e2705d2d.js" as="script"><link rel="preload" href="/assets/js/4.f3f755a1.js" as="script"><link rel="prefetch" href="/assets/js/2.5a1b79b4.js"><link rel="prefetch" href="/assets/js/3.73a3b494.js"><link rel="prefetch" href="/assets/js/5.d3f2068c.js"><link rel="prefetch" href="/assets/js/6.21386674.js"><link rel="prefetch" href="/assets/js/7.d71211a0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3b6fec45.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GridComponents</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link router-link-exact-active router-link-active">组件</a></div><div class="nav-item"><a href="/demo/" class="nav-link">Demo</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link router-link-exact-active router-link-active">组件</a></div><div class="nav-item"><a href="/demo/" class="nav-link">Demo</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>组件</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/components/#通用组件列表" class="sidebar-link">通用组件列表</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/components/#gridcells" class="sidebar-link">GridCells</a></li><li class="sidebar-sub-header"><a href="/components/#gridcard" class="sidebar-link">GridCard</a></li><li class="sidebar-sub-header"><a href="/components/#datatable" class="sidebar-link">DataTable</a></li><li class="sidebar-sub-header"><a href="/components/#datachart" class="sidebar-link">DataChart</a></li><li class="sidebar-sub-header"><a href="/components/#picktree" class="sidebar-link">PickTree</a></li><li class="sidebar-sub-header"><a href="/components/#pickselect" class="sidebar-link">PickSelect</a></li><li class="sidebar-sub-header"><a href="/components/#autocomplete" class="sidebar-link">AutoComplete</a></li><li class="sidebar-sub-header"><a href="/components/#bridgegroup" class="sidebar-link">BridgeGroup</a></li></ul></li><li><a href="/components/#功能组件列表" class="sidebar-link">功能组件列表</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/components/#customseed" class="sidebar-link">CustomSeed</a></li><li class="sidebar-sub-header"><a href="/components/#filterbar" class="sidebar-link">FilterBar</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="组件"><a href="#组件" aria-hidden="true" class="header-anchor">#</a> 组件</h1> <h2 id="通用组件列表"><a href="#通用组件列表" aria-hidden="true" class="header-anchor">#</a> 通用组件列表</h2> <h3 id="gridcells"><a href="#gridcells" aria-hidden="true" class="header-anchor">#</a> GridCells</h3> <p>定制栅格组件，<a href="https://github.com/jbaysolutions/vue-grid-layout" target="_blank" rel="noopener noreferrer">vue-grid-layout<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>的简单包装</p> <blockquote><p>props</p></blockquote> <ul><li><p><code>layout</code> : Object <code>default:{}</code></p> <p>一个具有<a href="https://github.com/jbaysolutions/vue-grid-layout" target="_blank" rel="noopener noreferrer">vue-grid-layout<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>标准格式的栅格配置文件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> layout <span class="token operator">=</span> <span class="token punctuation">{</span>
+  colNum<span class="token punctuation">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  rowNum<span class="token punctuation">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  isDraggable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  isResizable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      x<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      y<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      w<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+      h<span class="token punctuation">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+      i<span class="token punctuation">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+      component<span class="token punctuation">:</span> yourComponent<span class="token punctuation">,</span>
+      config<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 当前组件会接收一个props.config</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p><code>margin</code> : Array <code>default:[8,8]</code></p> <p>栅格模块间距</p></li></ul> <blockquote><p>events</p></blockquote> <p>事件触发后返回 layout 对象数据组</p> <ul><li><p>@layout-created=&quot;layoutCreatedEvent&quot;</p> <p>在组件 beforeCreated 生命周期钩子上激活</p></li> <li><p>@layout-before-mount=&quot;layoutBeforeMountEvent&quot;</p> <p>在组件 beforeMount 生命周期钩子上激活</p></li> <li><p>@layout-mounted=&quot;layoutMountedEvent&quot;</p> <p>在组件 mount 生命周期钩子上激活</p></li> <li><p>@layout-ready=&quot;layoutReadyEvent&quot;</p> <p>当挂钩上的所有操作完成时发出声响</p></li> <li><p>@layout-updated=&quot;layoutUpdatedEvent&quot;</p> <p>每次布局完成更新并重新计算所有网格项的位置</p></li></ul> <blockquote><p>methods</p></blockquote> <ul><li>openDrag 开启拖拽</li> <li>openResize 开启尺寸缩放</li> <li>closeDrag 关闭拖拽</li> <li>closeDrag 关闭尺寸缩放</li></ul> <h3 id="gridcard"><a href="#gridcard" aria-hidden="true" class="header-anchor">#</a> GridCard</h3> <p>主题容器组件，包括一个标题栏、过滤按钮以及一个容器组件插槽</p> <blockquote><p>props</p></blockquote> <ul><li><p><code>title</code> [String] <code>default:''</code></p> <p>主标题</p></li> <li><p><code>subTitle</code> [String] <code>default:''</code></p> <p>副标题</p></li></ul> <blockquote><p>slot</p></blockquote> <ul><li><code>default</code>: 容器组件</li> <li><code>icon</code>: 标题右侧图标</li></ul> <h3 id="datatable"><a href="#datatable" aria-hidden="true" class="header-anchor">#</a> DataTable</h3> <p>表格组件</p> <blockquote><p>props</p></blockquote> <ul><li><p><code>config</code> [Object]</p> <p>表格配置项信息，默认配置</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  header<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 见header</span>
+  pageSize<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token comment">// 分页</span>
+  options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// el-table中所有attribute</span>
+    size<span class="token punctuation">:</span> <span class="token string">&quot;small&quot;</span><span class="token punctuation">,</span>
+    border<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token string">&quot;100%&quot;</span><span class="token punctuation">,</span>
+    headerCellStyle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      fontSize<span class="token punctuation">:</span> <span class="token string">&quot;15px&quot;</span><span class="token punctuation">,</span>
+      color<span class="token punctuation">:</span> <span class="token string">&quot;#78899d&quot;</span><span class="token punctuation">,</span>
+      fontWeight<span class="token punctuation">:</span> <span class="token string">&quot;normal&quot;</span><span class="token punctuation">,</span>
+      backgroundColor<span class="token punctuation">:</span> <span class="token string">&quot;#f3f6f9&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// header 为表头配置信息,没有默认项，基本配置如下</span>
+<span class="token keyword">const</span> header <span class="token operator">=</span> <span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;index/slot&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 序号/自定义项（在默认slot中接收slot-scope=&quot;{row,column}&quot;）分别为当前行及列数据,</span>
+  <span class="token comment">// 如果不指定即为普通项</span>
+  label<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 表头</span>
+  value<span class="token punctuation">:</span> <span class="token string">&quot;key&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 对应字段</span>
+  width<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// min-width</span>
+  fixed<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  format<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd&quot;</span><span class="token punctuation">,</span> <span class="token comment">// （时间格式化）存在时，默认为时间项</span>
+  align<span class="token punctuation">:</span> <span class="token string">&quot;center&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p><code>data</code> [Array] <code>default:[]</code></p> <p>数据源</p></li></ul> <blockquote><p>slot</p></blockquote> <ul><li><code>default</code>: 当 header 中有 type = slot 项时生效，slot-scope=&quot;{row,column}&quot;，用来自定义每个单元格内容</li></ul> <h3 id="datachart"><a href="#datachart" aria-hidden="true" class="header-anchor">#</a> DataChart</h3> <p>图表组件，基于 <a href="https://v-charts.js.org/#/start" target="_blank" rel="noopener noreferrer">v-charts<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>（为方便起见，只提供常见的线、饼图、柱状图）<br>
+详细 options 可以参见<a href="https://echarts.baidu.com/option.html#title" target="_blank" rel="noopener noreferrer">echarts<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <blockquote><p>props</p></blockquote> <ul><li><p><code>config</code> [Object]</p> <p>表格配置项信息，默认配置</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 曲线类型，可选值['line', 'pie', 'histogram']</span>
+  type<span class="token punctuation">:</span> <span class="token string">&quot;line&quot;</span><span class="token punctuation">,</span>
+  maps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    series<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 数据源系列名字段</span>
+    xAxis<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 数据源维度</span>
+    yAxis<span class="token punctuation">:</span> <span class="token string">&quot;val&quot;</span> <span class="token comment">// 数据源指标</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//  v-charts's chartSettings</span>
+  settings<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// echarts's options &amp; v-charts's chartExtends</span>
+  options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    grid<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      bottom<span class="token punctuation">:</span> <span class="token number">20</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    series<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      center<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;50%&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;60%&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      radius<span class="token punctuation">:</span> <span class="token string">&quot;60%&quot;</span><span class="token punctuation">,</span>
+      barMaxWidth<span class="token punctuation">:</span> <span class="token number">25</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p><code>data</code> [Array] <code>default:[]</code></p> <p>曲线图的数据格式 data 默认为数组，每个项分别指向每个系列</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 两个系列，config.maps.series对应为水质水情系列字段，xAxis、yAxis分别对应time、val</span>
+<span class="token keyword">const</span> demo <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;水质&quot;</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> time<span class="token punctuation">:</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> time<span class="token punctuation">:</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;水情&quot;</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> time<span class="token punctuation">:</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> time<span class="token punctuation">:</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div></li></ul> <h3 id="picktree"><a href="#picktree" aria-hidden="true" class="header-anchor">#</a> PickTree</h3> <p>树形选择控件</p> <blockquote><p>props</p></blockquote> <ul><li><p><code>config</code> [Object] 参见<a href="/guide/#树形项">树形项</a></p></li> <li><p><code>value</code> [String, Number] 绑定值 (v-model)</p></li> <li><p><code>options</code> [Object] 继承所有 <code>el-tree</code> 上支持的属性</p></li> <li><p><code>placeholder</code> [String] 支持单独设置，或在 <code>options</code> 中设置</p></li></ul> <blockquote><p>events</p></blockquote> <ul><li><code>@change</code> 返回当前所选项 value</li> <li><code>@rows</code> 返回一个对象，包含所选项数据</li></ul> <h3 id="pickselect"><a href="#pickselect" aria-hidden="true" class="header-anchor">#</a> PickSelect</h3> <p>下拉项选择控件</p> <blockquote><p>props</p></blockquote> <ul><li><p><code>config</code> [Object] 参见<a href="/guide/#下拉项">下拉项</a></p></li> <li><p><code>value</code> [String, Number] 绑定值 (v-model)</p></li> <li><p><code>options</code> [Object] 继承所有 <code>el-select</code> 上支持的属性</p></li> <li><p><code>placeholder</code> [String] 支持单独设置，或在 <code>options</code> 中设置</p></li></ul> <blockquote><p>events</p></blockquote> <ul><li><code>@change</code> 返回当前所选项 value</li> <li><code>@rows</code> 返回一个对象，包含所选项数据</li></ul> <h3 id="autocomplete"><a href="#autocomplete" aria-hidden="true" class="header-anchor">#</a> AutoComplete</h3> <p>自动补全搜索控件</p> <blockquote><p>props</p></blockquote> <ul><li><p><code>config</code> [Object] 参见<a href="/guide/#自动补全项">自动补全项</a></p></li> <li><p><code>value</code> [String, Number] 绑定值 (v-model)</p></li> <li><p><code>options</code> [Object] 继承所有 <code>el-autocomplete</code> 上支持的属性</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 默认配置</span>
+<span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+  size<span class="token punctuation">:</span> <span class="token string">&quot;small&quot;</span><span class="token punctuation">,</span>
+  valueKey<span class="token punctuation">:</span> <span class="token string">&quot;label&quot;</span><span class="token punctuation">,</span>
+  debounce<span class="token punctuation">:</span> <span class="token number">600</span><span class="token punctuation">,</span>
+  triggerOnFocus<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  clearable<span class="token punctuation">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>placeholder [String] 支持单独设置，或在 options 中设置</p></li></ul> <blockquote><p>events</p></blockquote> <ul><li><code>@change</code> 返回当前所选项 value</li> <li><code>@rows</code> 返回一个对象，包含所选项数据</li></ul> <h3 id="bridgegroup"><a href="#bridgegroup" aria-hidden="true" class="header-anchor">#</a> BridgeGroup</h3> <p>级联项配置，支持 <code>input</code>, <code>tree</code>, <code>select</code>, <code>autoComplete</code>关联项</p> <blockquote><p>props</p></blockquote> <ul><li><p><code>config</code> [Object] 参见<a href="/guide/#级联项">级联项</a></p></li> <li><p><code>value</code> [String, Number] 绑定值 (v-model)</p></li></ul> <blockquote><p>events</p></blockquote> <ul><li><code>@change</code> 返回当前所选项 value</li> <li><code>@rows</code> 返回一个对象，包含所选项数据</li></ul> <h2 id="功能组件列表"><a href="#功能组件列表" aria-hidden="true" class="header-anchor">#</a> 功能组件列表</h2> <h3 id="customseed"><a href="#customseed" aria-hidden="true" class="header-anchor">#</a> CustomSeed</h3> <p>集成通用组件以及具备配置对应图表过滤项的简单业务组件，通过接口及过滤项配置，自动完成接口处理操作</p> <blockquote><p>props</p></blockquote> <ul><li><p><code>config</code> [Object]</p> <p>主要配置：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// id</span>
+  type<span class="token punctuation">:</span> <span class="token string">'data-chart'</span><span class="token punctuation">,</span> <span class="token comment">// 所使用子组件</span>
+  title<span class="token punctuation">:</span> <span class="token string">'434Km气温趋势线'</span><span class="token punctuation">,</span> <span class="token comment">// 主标题</span>
+  subTitle<span class="token punctuation">:</span> <span class="token string">'subtitle'</span><span class="token punctuation">,</span> <span class="token comment">// 副标题</span>
+  debug<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否开启调试，用于获取filterBar等返回的数据信息（console.log)</span>
+  titleTemplate<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 开启自定义动态标题</span>
+    template<span class="token punctuation">:</span> <span class="token string">'$temp1$$temp2$$temp3$动态标题内容'</span><span class="token punctuation">,</span>
+    format<span class="token punctuation">:</span> <span class="token string">'MM月'</span><span class="token punctuation">,</span> <span class="token comment">// 全局格式化</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token operator">...</span>
+      <span class="token punctuation">{</span> <span class="token comment">// template中需要替换的key</span>
+        key<span class="token punctuation">:</span> <span class="token string">'$temp1$'</span><span class="token punctuation">,</span>
+        <span class="token comment">// filterBar.config.search中所配置的对象的类型加上相应的value字段，建议开启debug，</span>
+        <span class="token comment">// 查看过滤项返回的字段来取相应的值，取值方式为js中对象取值，如：group.name.areaname</span>
+        keyValue<span class="token punctuation">:</span> <span class="token string">'time1-start'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        key<span class="token punctuation">:</span> <span class="token string">'$temp2$'</span><span class="token punctuation">,</span>
+        keyValue<span class="token punctuation">:</span> <span class="token string">'f_month'</span><span class="token punctuation">,</span>
+        format<span class="token punctuation">:</span> <span class="token string">'MMyue'</span> <span class="token comment">// 单个设置format，优先级更高</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        key<span class="token punctuation">:</span> <span class="token string">'$temp3$'</span><span class="token punctuation">,</span>
+        keyValue<span class="token punctuation">:</span> <span class="token string">'group.name.areaname'</span>
+      <span class="token punctuation">}</span>
+      <span class="token operator">...</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  icsv<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//是否导出csv （暂未添加）</span>
+  ipng<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//是否导出图片 （暂未添加）</span>
+  url<span class="token punctuation">:</span> <span class="token string">'api'</span><span class="token punctuation">,</span> <span class="token comment">//组件接口地址</span>
+  search<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 组件筛选项配置 参见FilterBar</span>
+  config<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">//组件自定义配置 如表格配置</span>
+  <span class="token function-variable function">dataMaps</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> data
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 针对接口返回的字段不满足子组件要求时，对所请求的数据格式化方法</span>
+  theme<span class="token punctuation">:</span> <span class="token string">'default'</span> <span class="token comment">//主体关键字</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">提示：关于 search 数组对象中默认项 `default` 设定</p> <p>普通非嵌套项 <code>default</code> 绑定的是接口请求默认参数以及控件默认选中类型，
+嵌套项 <code>daterange</code>、<code>group</code> 的 <code>default</code> 绑定的仅是接口请求默认参数，
+控件默认选中需要在嵌套数组 <code>range</code>、<code>groups</code> 内定义 default 来初始化（最好与外部 default 相一致）<br>
+search配置项参见<a href="/guide/#筛选项配置">筛选项配置</a></p></div> <blockquote><p>events</p></blockquote></li> <li><p><code>@updated</code>: 返回一个对象，出现过滤动作后触发，该对象为过滤组件修改后的过滤参数与传入的 config 相合并（合并至 default 中）</p></li></ul> <h3 id="filterbar"><a href="#filterbar" aria-hidden="true" class="header-anchor">#</a> FilterBar</h3> <p>过滤面板组件，置于 popover 中，接收一个与<code>CustomSeed</code>相同的配置项 config，加载相应的过滤组件</p> <blockquote><p>props</p></blockquote> <ul><li><code>config</code> [Object] 参见<code>CustomSeed.config</code></li></ul> <blockquote><p>events</p></blockquote> <ul><li><code>@filter</code> 返回一个对象，包含当前所选过滤项所配置的接口参数</li> <li><code>@rows</code> 返回一个对象，其中包含所有过滤项原生字段项的内容，可以用作自定义内容</li></ul> <blockquote><p>slot</p></blockquote> <ul><li><code>default</code>: 触发面板 popover 的 reference，默认是一个 setting 图标</li></ul></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.e2705d2d.js" defer></script><script src="/assets/js/4.f3f755a1.js" defer></script>
+  </body>
+</html>

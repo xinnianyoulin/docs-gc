@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>所有过滤项(复杂组合自行测试) Demo | GridComponents</title>
+    <meta name="description" content="Tools for quickly configuring components for Yunnan projects">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3b6fec45.css" as="style"><link rel="preload" href="/assets/js/app.e2705d2d.js" as="script"><link rel="preload" href="/assets/js/5.d3f2068c.js" as="script"><link rel="prefetch" href="/assets/js/2.5a1b79b4.js"><link rel="prefetch" href="/assets/js/3.73a3b494.js"><link rel="prefetch" href="/assets/js/4.f3f755a1.js"><link rel="prefetch" href="/assets/js/6.21386674.js"><link rel="prefetch" href="/assets/js/7.d71211a0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3b6fec45.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GridComponents</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link">组件</a></div><div class="nav-item"><a href="/demo/" class="nav-link router-link-exact-active router-link-active">Demo</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">指南</a></div><div class="nav-item"><a href="/components/" class="nav-link">组件</a></div><div class="nav-item"><a href="/demo/" class="nav-link router-link-exact-active router-link-active">Demo</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>所有过滤项(复杂组合自行测试) Demo</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/demo/#所有过滤项-复杂组合自行测试-demo" class="sidebar-link">所有过滤项(复杂组合自行测试) Demo</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="所有过滤项-复杂组合自行测试-demo"><a href="#所有过滤项-复杂组合自行测试-demo" aria-hidden="true" class="header-anchor">#</a> 所有过滤项(复杂组合自行测试) Demo</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> search <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;tree&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;行政区划&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;name1&quot;</span><span class="token punctuation">,</span>
+    url<span class="token punctuation">:</span> <span class="token string">&quot;http://47.94.240.212:8040/webapi/api/v1/water/quality/area&quot;</span><span class="token punctuation">,</span>
+    treeOptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      entry<span class="token punctuation">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+      maps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        id<span class="token punctuation">:</span> <span class="token string">&quot;areacode&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;areaname&quot;</span><span class="token punctuation">,</span>
+      value<span class="token punctuation">:</span> <span class="token string">&quot;areacode&quot;</span><span class="token punctuation">,</span>
+      children<span class="token punctuation">:</span> <span class="token string">&quot;children&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token number">530000</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;站点&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;stcd&quot;</span><span class="token punctuation">,</span>
+    url<span class="token punctuation">:</span>
+      <span class="token string">&quot;http://47.94.240.212:8040/webapi/api/v1/water?extra=area&amp;no_data_visible=false&amp;area_code=530000&quot;</span><span class="token punctuation">,</span>
+    keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 显示字段</span>
+      value<span class="token punctuation">:</span> <span class="token string">&quot;id&quot;</span> <span class="token comment">// 最终使用的参数值字段</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span> <span class="token comment">//默认选择值</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;最近时间&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;time2&quot;</span><span class="token punctuation">,</span>
+    valueToRange<span class="token punctuation">:</span> <span class="token string">&quot;days&quot;</span><span class="token punctuation">,</span> <span class="token comment">// hours、days</span>
+    valueFormat<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd 08:00:00&quot;</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;最近一小时&quot;</span><span class="token punctuation">,</span>
+        valueToRange<span class="token punctuation">:</span> <span class="token string">&quot;hours&quot;</span><span class="token punctuation">,</span> <span class="token comment">// hours、days</span>
+        value<span class="token punctuation">:</span> <span class="token string">&quot;1&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;最近七天&quot;</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">&quot;7&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;input&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;站名&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;甸尾&quot;</span> <span class="token comment">//默认选择值</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;autocomplete&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;站点名称&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+    fetchParam<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span> <span class="token comment">// url请求参数字段</span>
+    url<span class="token punctuation">:</span>
+      <span class="token string">&quot;http://47.94.240.212:8040/webapi/api/v1/water/site/list?index=1&amp;size=10&quot;</span><span class="token punctuation">,</span> <span class="token comment">//数据接口地址 选择理化指标</span>
+    keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      label<span class="token punctuation">:</span> <span class="token string">&quot;stnm&quot;</span><span class="token punctuation">,</span>
+      value<span class="token punctuation">:</span> <span class="token string">&quot;stcd&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;year&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;年份&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;year&quot;</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;2018&quot;</span> <span class="token comment">//默认选择值</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;month&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;月份&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;month&quot;</span><span class="token punctuation">,</span>
+    valueFormat<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM&quot;</span><span class="token punctuation">,</span>
+    format<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;date&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;日期&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;date&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;datetime&quot;</span><span class="token punctuation">,</span>
+    label<span class="token punctuation">:</span> <span class="token string">&quot;时间&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;datetime&quot;</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;nowTime&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;daterange&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;time1&quot;</span><span class="token punctuation">,</span>
+    valueFormat<span class="token punctuation">:</span> <span class="token string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span><span class="token punctuation">,</span>
+    range<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">&quot;datetime&quot;</span><span class="token punctuation">,</span>
+        key<span class="token punctuation">:</span> <span class="token string">&quot;start&quot;</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;开始时间&quot;</span><span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;nowTime-subDays-7&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">&quot;datetime&quot;</span><span class="token punctuation">,</span>
+        key<span class="token punctuation">:</span> <span class="token string">&quot;end&quot;</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;结束时间&quot;</span><span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;nowTime&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;[nowTime-subDays-7,nowTime]&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;group&quot;</span><span class="token punctuation">,</span>
+    key<span class="token punctuation">:</span> <span class="token string">&quot;ret2&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 最终所要的字段</span>
+    groups<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">&quot;tree&quot;</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;行政区划&quot;</span><span class="token punctuation">,</span>
+        key<span class="token punctuation">:</span> <span class="token string">&quot;name1&quot;</span><span class="token punctuation">,</span>
+        bridge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          to<span class="token punctuation">:</span> <span class="token string">&quot;level2&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        url<span class="token punctuation">:</span> <span class="token string">&quot;http://47.94.240.212:8040/webapi/api/v1/water/quality/area&quot;</span><span class="token punctuation">,</span>
+        treeOptions<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          entry<span class="token punctuation">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+          maps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            id<span class="token punctuation">:</span> <span class="token string">&quot;areacode&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">&quot;areaname&quot;</span><span class="token punctuation">,</span>
+          value<span class="token punctuation">:</span> <span class="token string">&quot;areacode&quot;</span><span class="token punctuation">,</span>
+          children<span class="token punctuation">:</span> <span class="token string">&quot;children&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token number">530000</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;要素&quot;</span><span class="token punctuation">,</span>
+        key<span class="token punctuation">:</span> <span class="token string">&quot;type2&quot;</span><span class="token punctuation">,</span>
+        bridge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          to<span class="token punctuation">:</span> <span class="token string">&quot;level3&quot;</span><span class="token punctuation">,</span>
+          <span class="token keyword">from</span><span class="token punctuation">:</span> <span class="token string">&quot;level2&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        url<span class="token punctuation">:</span> <span class="token string">&quot;http://47.94.240.212:8040/webapi/api/v1/water/quality/field&quot;</span><span class="token punctuation">,</span>
+        keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+          value<span class="token punctuation">:</span> <span class="token string">&quot;code&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">&quot;类型&quot;</span><span class="token punctuation">,</span>
+        key<span class="token punctuation">:</span> <span class="token string">&quot;ret3&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 需要存在，用来取值</span>
+        bridge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token keyword">from</span><span class="token punctuation">:</span> <span class="token string">&quot;level3&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        url<span class="token punctuation">:</span> <span class="token string">&quot;http://47.94.240.212:8040/webapi/api/v1/water/quality/fieldtype&quot;</span><span class="token punctuation">,</span>
+        keyMaps<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          label<span class="token punctuation">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+          value<span class="token punctuation">:</span> <span class="token string">&quot;id&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.e2705d2d.js" defer></script><script src="/assets/js/5.d3f2068c.js" defer></script>
+  </body>
+</html>
